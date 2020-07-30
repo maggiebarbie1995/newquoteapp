@@ -20,6 +20,11 @@ export class QuoteComponent implements OnInit {
     new Quote(10,'Giorgio Armani','I love things that age well - things that dont date, that stand the test of time and that become living examples of the absolute best.')
   ];
 
+
+  toggleDetails(index){
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
+
   constructor() { }
 
   ngOnInit(): void {
