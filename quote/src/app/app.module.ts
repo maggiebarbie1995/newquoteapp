@@ -6,12 +6,15 @@ import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { StrikethroughDirective } from './strikethrough.directive';
+import { VoteCountPipe } from './vote-count.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,    
     QuoteComponent, 
-    QuoteDetailComponent, StrikethroughDirective
+    QuoteDetailComponent,
+    StrikethroughDirective,
+    VoteCountPipe, 
   ],
   imports: [
     BrowserModule,
