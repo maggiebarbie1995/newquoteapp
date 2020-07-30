@@ -4,4 +4,6 @@
         <li *ngFor='let quote of quotes'>
           {{quote.name}}
         </li>
+    </ul>
+    <p *ngIf='quotes.length > 5'>Your quotes are full of inspirations</p>
   </div>
